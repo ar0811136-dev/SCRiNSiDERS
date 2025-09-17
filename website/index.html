@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+
+  </head>
+<body>
+
+    <h1 id="h11">  SCRiN SiDERS  </h1>
+    <h2 id="h21">  by- Penil Shah </h2>
+    
+    <div class="container" id="img">
+        <div class="formbox">
+               <h1 style="font-size: 250%;" id="title">SiGN UP</h1>
+        
+        <form>
+          <div class= "input-group" id="icon1" >
+            <div class="input-field" id="nameField">
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+</svg>
+                <input type="text" placeholder="Name">
+            </div>
+
+            <div class="input-field" id="icon1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+</svg>
+                <input type="email" placeholder="Email">
+            </div>
+
+            <div class="input-field" id="icon1">
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
+  <path d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2M2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+</svg>
+                <input type="password" placeholder="Password">
+            </div>
+            <p> Forget Password <a href="#"> Click Here!</a></p>
+          </div>
+          <div class="btn-field">
+            <button type="button" id="signupbtn">Sign Up</button>
+             <button type="button" id="signinbtn" class="disable">Sign In</button>
+          </div>
+        </form>
+        
+    </div>
+    </div>
+    <!-- Script placed at the end so elements exist when it runs -->
+<script>
+    const signinbtn = document.getElementById('signinbtn');
+    const signupbtn = document.getElementById('signupbtn');
+    const nameField = document.getElementById('nameField');
+    const title = document.getElementById('title');
+
+    signinbtn.addEventListener('click', () => {
+      nameField.classList.remove('show');   // hide smoothly
+      title.textContent = 'SiGN IN';
+      signinbtn.classList.add('disable');
+      signupbtn.classList.remove('disable');
+    });
+
+    signupbtn.addEventListener('click', () => {
+      nameField.classList.add('show');      // show smoothly
+      title.innerHTML = 'SiGN UP';
+      signupbtn.classList.add('disable');
+      signinbtn.classList.remove('disable');
+    });
+  </script>
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://SCRiN SiDERS.com/</loc>
+    <lastmod>2025-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
+<meta name="description" content="Login page for My Website">
+<meta name="keywords" content="login, user, website">
+<meta name="robots" content="index, follow">
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+* {
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    
+}
+
+body{
+    text-align: center;
+    background-color:rgb(105, 103, 99);
+
+}
+button{
+    color: rgb(105, 103, 99);
+    
+}
+
+
+#h21{
+    text-align: end;
+
+}
+#h11{
+    background-color: rgb(105, 103, 99);
+    text-decoration:white solid underline;
+    font-weight: 595;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    
+}
+.container{
+    width:100%;
+    height:100vh;
+    background-color: rgb(105, 103, 99);
+    position: relative;
+}
+.formbox{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.formbox h1{
+    font-size: 30px;
+    margin: 60px;
+    color:rgb(105, 103, 99);
+    position: relative; 
+}
+
+.formbox h1::after{
+    content: '';
+    width: 150px;
+    height: 4px;
+    border-radius: 3px;
+    background: rgb(105, 103, 99);
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.input-field{
+    background:#eaeaea;
+    margin: 25px  5px;
+    border-radius: 50px;
+    display: flex;
+    padding: 5px 20px;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+} 
+input{
+    width: 50%;
+    background:transparent;
+    border: 0px;
+    outline: 0px;
+    padding: 13px 15px;
+
+}
+.input-field i{
+    margin-left: 20px;
+    color: #555;
+}
+form p{
+    text-align: left;
+    font-size: 13px;
+}
+form p a{
+    text-decoration: none;
+    color: 3c00a0;
+}
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-field button{
+    flex-basis: 48%;
+    background:#555;
+    color:rgb(255, 255, 255);
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition:  1s;
+}
+.input-group{
+    height: 280px;
+
+}
+.btn-field button.disable{ 
+    background:rgb(105, 103, 99);
+}
+
+   #nameField {
+      max-height: 0;              
+      opacity: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
+      background: #f6f6f6;
+      padding: 0 10px;  /* collapsed padding by default */
+      margin-bottom: 10px;
+    }
+
+    /* visible state */
+    #nameField.show {
+      max-height: 100px;   
+      opacity: 1;
+      padding: 10px;       /* restore padding smoothly */
+    }
+
+ 
+    
